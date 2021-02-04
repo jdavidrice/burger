@@ -1,0 +1,16 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Burger App",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jeremy Rice",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
+}
