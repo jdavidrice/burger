@@ -1,5 +1,6 @@
 # Eat-Da-Burger 
 [![GitHub license](https://img.shields.io/github/license/jdavidrice/burger)](https://github.com/jdavidrice/burger/blob/master/LICENSE)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/21be935f62a64535871bb70d02f946e4)](https://www.codacy.com/gh/jdavidrice/burger/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jdavidrice/burger&amp;utm_campaign=Badge_Grade)
 
 ## Description 
 
