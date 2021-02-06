@@ -4,7 +4,7 @@
     <h1>Eat-Da-Borgar!</h1>
     <div class="flex-row">
 
-      <div class="flex-small">
+      <div class="flex-small one-third">
         <h2>Burgers that are not devoured:</h2>
 
         <ul>
@@ -15,10 +15,10 @@
           {{/each}}
         </ul>
       </div>
-
-        <img src="/assets/css/borgar.jpg" alt="Zero Two requesting a borgar.">
-      
-      <div class="flex-small">
+      <div class="flex-small one-third">
+        <img src="assets/images/borgar.jpg" class="responsive-image" alt="Zero Two requesting a borgar.">
+      </div>
+      <div class="flex-small one-third">
         <h2>Burgers that have been devoured:</h2>
 
         <ul>
@@ -30,23 +30,41 @@
         </ul>
       </div>
     </div>
+    <div class="flex-row" id="newBurger">
+      <button type="button" id="addBurgerBtn" class="btn btn-primary" data-toggle="modal" data-target="#newBurgerModal">
+        MOAR BORGARZ
+      </button>
+    </div>
+    <div class="modal fade" id="newBurgerModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">MMMMMMMM BORGZ!!!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="create-form">
 
-    <div class="flex-row">
-      <h2>Add a Burger</h2>
-      <form id="create-form">
+              <div class="form-group">
+                <label for="bu">Burger Name:</label>
+                <input type="text" id="bu" name="name">
+              </div>
 
-        <div class="form-group">
-          <label for="bu">Burger Name:</label>
-          <input type="text" id="bu" name="name">
+              <div class="form-group">
+                <label for="devoured">Devoured?</label>
+                <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured<br>
+                <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
+              </div>
+              <button type="submit" class="btn btn-primary">Add Da Borgar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            {{!-- <button type="submit" class="btn btn-primary">Save changes</button> --}}
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="devoured">Devoured?</label><br>
-          <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured<br>
-          <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
-        </div>
-
-        <button type="submit">Add Burger</button>
-      </form>
+      </div>
     </div>
 </main>
