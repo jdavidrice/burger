@@ -56,21 +56,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
       };
 
       // Send POST request to create a new quote
-      fetch('/api/burgers', {
-        method: 'POST',
+      fetch("/api/burgers", {
+        method: "POST",
         headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
+          Accept: "application/json",
+          "Content-Type": "application/json",
         },
 
         // make sure to serialize the JSON body
         body: JSON.stringify(newBurger),
       }).then(() => {
         // Empty the form
-        document.getElementById('bu').value = '';
+        document.getElementById("bu").value = "";
 
         // Reload the page so the user can see the new burger
-        console.log('Created a new burger!');
+        console.log("Created a new burger!");
         location.reload();
       });
     });

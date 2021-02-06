@@ -1,7 +1,21 @@
+body {
+  text-align: center;
+  background: linear-gradient(to right top,#65dfc9 ,#6cdbeb);
+}
+
+ul {
+  align-items: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+}
+
+img {
+  height: 30%;
+  width: 30%;
 }
 
 .label {

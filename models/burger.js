@@ -17,7 +17,7 @@ const burger = {
   },
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (burgersController.js).
 module.exports = burger;
 
 // 1. Inside your`burger` directory, create a folder named`views`.
