@@ -1,9 +1,26 @@
+html,
 body {
   text-align: center;
-  background: linear-gradient(to right top,#65dfc9 ,#6cdbeb);
+  margin: 0;
+  height: 100%;
+  /* background-color: #6cdbeb; */
+  background-image: linear-gradient(to right top,#ff7bf8 ,#6cdbeb);
 }
-
-ul {
+h1,
+h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+}
+.button {
+  font-size: 1rem;
+  margin: .5rem;
+}
+/* ul {
   align-items: center;
 }
 
@@ -11,7 +28,7 @@ li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
-}
+} */
 
 .label {
   font-weight: bold;
@@ -27,9 +44,94 @@ li {
   margin-bottom: 5px;
 }
 
+h5.modal-title {
+  text-align: center;
+}
+
 #addBurgerBtn {
 margin-top: 2rem;
 margin-left: auto;
 margin-right: auto;
 
+}
+
+:root {
+  /* Base font size */
+  /* font-size: 8px;    */
+  
+   /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+/* body {
+  font-family: 'Hachi Maru Pop', cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background: #000;
+  min-height: 100vh;
+} */
+img {
+  border: 0.3rem solid #fff;
+  border-radius: 1.5rem;
+  /* text-transform: uppercase; */
+  animation: flicker 5.5s infinite alternate; 
+}
+h1 {
+  /* font-weight: 200;
+  font-style: italic; */
+  font-size: 3rem;
+  color: #fff;
+  padding: 3rem;
+  border: 0.3rem solid #fff;
+  border-radius: 1.5rem;
+  /* text-transform: uppercase; */
+  animation: flicker 4.3s infinite alternate;     
+}
+
+h1::-moz-selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::selection {
+  background-color: var(--neon-border-color);
+  color: var(--neon-text-color);
+}
+
+h1::focus {
+  outline: none;
+}
+
+/* https://codepen.io/GeorgePark/pen/MrjbEr */
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
 }

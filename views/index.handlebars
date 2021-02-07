@@ -1,68 +1,62 @@
 <main>
   <div class="container">
 
-    <h1>Eat-Da-Borgar!</h1>
+    <h1>Eat-Da-Burger!</h1>
     <div class="flex-row">
-
       <div class="flex-small one-third">
-        <h2>Burgers that are not devoured:</h2>
-
-        <ul>
-          {{#each burgers}}
-          {{#unless devoured}}
-          {{> burgers/burger-block devoured=true}}
-          {{/unless}}
-          {{/each}}
-        </ul>
+        <h2>Not Devoured</h2>
+        <div>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+        </div>
       </div>
       <div class="flex-small one-third">
         <img src="assets/images/borgar.jpg" class="responsive-image" alt="Zero Two requesting a borgar.">
       </div>
       <div class="flex-small one-third">
-        <h2>Burgers that have been devoured:</h2>
-
-        <ul>
+        <h2>Devoured</h2>
+        <div>
           {{#each burgers}}
           {{#if devoured}}
           {{> burgers/burger-block devoured=false}}
           {{/if}}
           {{/each}}
-        </ul>
+        </div>
       </div>
     </div>
     <div class="flex-row" id="newBurger">
-      <button type="button" id="addBurgerBtn" class="btn btn-primary" data-toggle="modal" data-target="#newBurgerModal">
-        MOAR BORGARZ
+      <button type="button" id="addBurgerBtn" class="button" data-toggle="modal" data-target="#newBurgerModal">
+        Add Burger
       </button>
     </div>
     <div class="modal fade" id="newBurgerModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">MMMMMMMM BORGZ!!!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title">Add a New Burger</h5>
+            <button type="button" class="button close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <form id="create-form">
-
               <div class="form-group">
                 <label for="bu">Burger Name:</label>
                 <input type="text" id="bu" name="name">
               </div>
-
               <div class="form-group">
                 <label for="devoured">Devoured?</label>
                 <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured<br>
                 <input type="radio" name="devoured" value="0" id="notDevoured"> Not Devoured
               </div>
-              <button type="submit" class="btn btn-primary">Add Da Borgar</button>
+              <div class="modal-footer">
+                <button type="submit" class="button">Add</button>
+                <button type="button" class="button" data-dismiss="modal">Close</button>
+              </div>
             </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            {{!-- <button type="submit" class="btn btn-primary">Save changes</button> --}}
           </div>
         </div>
       </div>
