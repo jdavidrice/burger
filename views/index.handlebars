@@ -5,7 +5,7 @@
     <div class="flex-row">
       <div class="flex-small one-third">
         <h2>Not Devoured</h2>
-        <div>
+        <div class="burgerGroup" id="notDevoured">
         {{#each burgers}}
         {{#unless devoured}}
         {{> burgers/burger-block devoured=true}}
@@ -18,7 +18,7 @@
       </div>
       <div class="flex-small one-third">
         <h2>Devoured</h2>
-        <div>
+        <div class="burgerGroup" id="devoured">
           {{#each burgers}}
           {{#if devoured}}
           {{> burgers/burger-block devoured=false}}

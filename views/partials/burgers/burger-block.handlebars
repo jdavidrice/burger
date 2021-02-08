@@ -1,9 +1,10 @@
-<div>
+<div class="container burgerInstance">
   {{name}}
-
-  <button class="full-button change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+<div class="flex-row button-group">
+  <button class="button change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
     {{#if devoured}}Devour It{{else}}Undevour It{{/if}}
   </button>
 
-  <button class="full-button delete-burger" data-id="{{this.id}}">Trash It</button>
+  <button class="button delete-burger" data-id="{{this.id}}">Trash It</button>
+  </div>
 </div>

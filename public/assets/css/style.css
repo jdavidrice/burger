@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: 0;
   height: 100%;
-  /* background-color: #6cdbeb; */
+  background-color: #6cdbeb;
   background-image: linear-gradient(to right top,#ff7bf8 ,#6cdbeb);
 }
 h1,
@@ -13,22 +13,26 @@ h2 {
 h2 {
   font-size: 1.5rem;
 }
-p {
-  font-size: 1rem;
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.burgerInstance {
+  padding: 1rem;
+  margin: 1rem;
+  border: 0.2rem solid #fff;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  animation: flicker 6.3s infinite alternate; 
 }
 .button {
+  flex: 1 0;
   font-size: 1rem;
   margin: .5rem;
 }
-/* ul {
-  align-items: center;
-}
-
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-} */
 
 .label {
   font-weight: bold;
@@ -44,35 +48,19 @@ li {
   margin-bottom: 5px;
 }
 
-h5.modal-title {
-  text-align: center;
-}
-
 #addBurgerBtn {
 margin-top: 2rem;
 margin-left: auto;
 margin-right: auto;
+max-width: 10rem;
 
 }
 
-:root {
-  /* Base font size */
-  /* font-size: 8px;    */
-  
+:root {  
    /* Set neon color */
   --neon-text-color: #f40;
   --neon-border-color: #08f;
 }
-
-/* body {
-  font-family: 'Hachi Maru Pop', cursive;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  background: #000;
-  min-height: 100vh;
-} */
 img {
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
