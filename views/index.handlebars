@@ -2,15 +2,20 @@
   <div class="container">
 
     <h1>Eat-Da-Burger!</h1>
+    <div class="flex-row" id="newBurger">
+      <button type="button" id="addBurgerBtn" class="button" data-toggle="modal" data-target="#newBurgerModal">
+        Add Burger
+      </button>
+    </div>
     <div class="flex-row">
       <div class="flex-small one-third">
         <h2>Not Devoured</h2>
         <div>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-        {{/each}}
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
         </div>
       </div>
       <div class="flex-small one-third">
@@ -26,11 +31,6 @@
           {{/each}}
         </div>
       </div>
-    </div>
-    <div class="flex-row" id="newBurger">
-      <button type="button" id="addBurgerBtn" class="button" data-toggle="modal" data-target="#newBurgerModal">
-        Add Burger
-      </button>
     </div>
     <div class="modal fade" id="newBurgerModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-dialog-centered" role="document">

@@ -12,6 +12,7 @@ h2 {
 }
 h2 {
   font-size: 1.5rem;
+  margin-top: 0;
 }
 p {
   font-size: 1rem;
@@ -49,7 +50,7 @@ h5.modal-title {
 }
 
 #addBurgerBtn {
-margin-top: 2rem;
+margin: 1rem;
 margin-left: auto;
 margin-right: auto;
 
@@ -84,6 +85,7 @@ h1 {
   font-style: italic; */
   font-size: 3rem;
   color: #fff;
+  margin-bottom: 0;
   padding: 3rem;
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
