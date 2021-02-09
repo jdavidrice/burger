@@ -20,7 +20,7 @@ const routes = require("./controllers/burgersController.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, (err) => {
   if (err) {
     console.log(err)
