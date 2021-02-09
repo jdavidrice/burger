@@ -56,6 +56,9 @@ margin-right: auto;
 
 }
 
+/* Flicering Neon effect borrowed from George Park
+ https://codepen.io/GeorgePark/pen/MrjbEr */
+
 :root {
   /* Base font size */
   /* font-size: 8px;    */
@@ -77,8 +80,7 @@ margin-right: auto;
 img {
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
-  /* text-transform: uppercase; */
-  animation: flicker 5.5s infinite alternate; 
+  animation: flicker .5s infinite alternate; 
 }
 h1 {
   /* font-weight: 200;
@@ -90,7 +92,7 @@ h1 {
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
   /* text-transform: uppercase; */
-  animation: flicker 4.3s infinite alternate;     
+  animation: flicker 1s infinite alternate;     
 }
 
 h1::-moz-selection {
@@ -106,8 +108,6 @@ h1::selection {
 h1::focus {
   outline: none;
 }
-
-/* https://codepen.io/GeorgePark/pen/MrjbEr */
 
 /* Animate neon flicker */
 @keyframes flicker {
@@ -136,4 +136,10 @@ h1::focus {
         text-shadow: none;
         box-shadow: none;
     }    
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

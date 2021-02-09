@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         devoured: document.getElementById("devoured").checked,
       };
       if (newBurger.name.length > 0) {
-        // Send POST request to create a new quote
+        // Send POST request to create a new burger
         fetch("/api/burgers", {
           method: "POST",
           headers: {
