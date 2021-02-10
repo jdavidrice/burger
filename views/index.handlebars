@@ -9,7 +9,7 @@
     </div>
     <div class="flex-row">
       <div class="flex-small one-third">
-        <h2>Not Devoured</h2>
+        <h2 class="notDevoured">Not Devoured</h2>
         <div>
           {{#each burgers}}
           {{#unless devoured}}
@@ -19,10 +19,10 @@
         </div>
       </div>
       <div class="flex-small one-third">
-        <img src="assets/images/borgar.jpg" class="responsive-image" alt="Zero Two requesting a borgar.">
+        <img src="assets/images/giant_burger.png" class="responsive-image" alt="Giant burger.">
       </div>
       <div class="flex-small one-third">
-        <h2>Devoured</h2>
+        <h2 class="devoured">Devoured</h2>
         <div>
           {{#each burgers}}
           {{#if devoured}}

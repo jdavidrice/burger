@@ -4,15 +4,13 @@
 
 ## Description 
 
-This is a "burger logger"  app (called "Eat-Da-Burger") that is made with MySQL, Node, Express, Handlebars and a homemade ORM.
-
+This is a "burger logger"  app (called "Eat-Da-Burger!") that is made with MySQL, Node, Express, Handlebars and a homemade ORM.
 *   Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
 *   Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
 *   Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 *   This app will store every burger in a database, whether devoured or not.
-<!-- ![Sample Picture of App](.png)
-![Sample Picture of App](.png) -->
-[Link to Deployed App]()
+
+[Link to Deployed App](https://warm-sea-12669.herokuapp.com/)
 
 ## Table of Contents
 
@@ -24,11 +22,15 @@ This is a "burger logger"  app (called "Eat-Da-Burger") that is made with MySQL,
 *   [Contributing](#Contributing)
 *   [Tests](#Tests)
 
+![Sample Picture of App](public/assets/images/burger_app.png)
 ## Installation
  
+ There is nothing to install to use this web app.
+
 *   [Return to Top](#Eat-Da-Burger)
 
 ## Usage 
+Use the "Add Burger" button to add a new burger to either the "Not Devoured" list or the "Devoured" list. Click on the "Devour It" button to move a burger to the "Devoured" list, and vice-versa. Click on the "Trash It" button to remove a burger from the app. 
 
 *   [Return to Top](#Eat-Da-Burger)
 
@@ -39,6 +41,8 @@ Please contact me at the email address listed below with any questions about thi
 [jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
 
 [Repository Owner GitHub Profile](https://github.com/jdavidrice)
+
+[Repository Owner Portfolio](https://jdavidrice.github.io/Responsive_Portfolio/index.html)
 
 *   [Return to Top](#Eat-Da-Burger)
 
@@ -70,7 +74,9 @@ SOFTWARE.
 
 ## Contributing
 
-  Jeremy Rice
+  [Jeremy Rice](https://www.buymeacoffee.com/jdavidrice)
+
+  Thank you to [George Park](https://www.georgewpark.com/) for his [Flickering Neon Sign Effect](https://codepen.io/GeorgePark/pen/MrjbEr). 
 
 *   [Return to Top](#Eat-Da-Burger)
 
