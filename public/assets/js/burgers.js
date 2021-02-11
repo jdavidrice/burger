@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           body: JSON.stringify(newDevouredState),
         }).then((response) => {
           // Check that the response is all good
-          // Reload the page so the user can see the new quote
+          // Reload the page so the user can see the new burger
           if (response.ok) {
             console.log(`Changed devoured to: ${newDevoured}`);
             location.reload("/");

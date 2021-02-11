@@ -5,30 +5,33 @@
 html,
 body {
   text-align: center;
+  overflow: auto;
   margin: 0;
   height: 100%;
   background-color: #6cdbeb;
-  background-image: linear-gradient(to right top,#ff7bf8 ,#6cdbeb);
   place-items: center;
-
-  /* position: relative;
+  position: relative;
+  background-attachment: fixed;
   background-image: linear-gradient(
     to right top,
     #ff7bf8,
     #6cdbeb
   );
-  z-index: 1; */
+  /* z-index: 1; */
 }
 
-/* body::before {
+/* html,
+body::before {
   position: absolute;
+  overflow: auto;
+  height: 100%;
   content: "";
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-image: linear-gradient(
-    to left bottom,
+    to right top,
     #ff7bf8,
     #6cdbeb
   );
@@ -36,6 +39,7 @@ body {
   transition: opacity 0.5s linear;
   opacity: 0;
 }
+html,
 body:hover::before {
   opacity: 1;
 } */
@@ -45,16 +49,19 @@ h2 {
   font-size: 1.7rem;
   margin-top: 0;
 }
+
 p {
   font-size: 1.4rem;
   line-height: 1.5rem;
 }
+
 img {
   margin-top: 3.5rem;
 }
 .nameText {
   margin: .5rem;
 }
+
 .burgerBlock {
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
@@ -64,6 +71,7 @@ img {
     0 0 2rem #08f,
     inset 0 0 2rem #08f;
 }
+
 .button {
   font-size: 1rem;
   margin: .5rem;
@@ -93,17 +101,20 @@ margin-left: auto;
 margin-right: auto;
 z-index: 2;
 }
+
 #newBurger {
   margin-top: 1rem;
 }
 
-/*  Flicering Neon effect borrowed from George Park
+/*  Flickering Neon effect borrowed from George Park
  https://codepen.io/GeorgePark/pen/MrjbEr  */
+
 :root {
    /* Set neon color */
   --neon-text-color: #f40;
   --neon-border-color: #08f;
 }
+
 h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
