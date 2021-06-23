@@ -17,32 +17,7 @@ body {
     #ff7bf8,
     #6cdbeb
   );
-  /* z-index: 1; */
 }
-
-/* html,
-body::before {
-  position: absolute;
-  overflow: auto;
-  height: 100%;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(
-    to right top,
-    #ff7bf8,
-    #6cdbeb
-  );
-  z-index: -1;
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-html,
-body:hover::before {
-  opacity: 1;
-} */
 
 h2 {
   font-family: 'Press Start 2P', cursive;
@@ -67,14 +42,14 @@ img {
   border-radius: 1.5rem;
   margin: .5rem;
   text-shadow: none;
-  box-shadow: 
+  box-shadow:
     0 0 2rem #08f,
     inset 0 0 2rem #08f;
 }
 
 .button {
   font-size: 1rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .label {
@@ -96,10 +71,10 @@ img {
 }
 
 #addBurgerBtn {
-margin: 1rem;
-margin-left: auto;
-margin-right: auto;
-z-index: 2;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
 }
 
 #newBurger {
@@ -123,19 +98,26 @@ h1 {
   padding: 3rem;
   border: 0.3rem solid #fff;
   border-radius: 1.5rem;
-  animation: flicker 1s infinite alternate;     
+  animation: flicker 1s infinite alternate;
+
 }
+
 h1::-moz-selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
+
 }
+
 h1::selection {
   background-color: var(--neon-border-color);
   color: var(--neon-text-color);
+
 }
+
 h1::focus {
   outline: none;
 }
+
 /*  Animate neon flicker  */
 @keyframes flicker {
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {

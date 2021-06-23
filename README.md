@@ -10,6 +10,17 @@ This is a "burger logger"  app (called "Eat-Da-Burger!") that is made with MySQL
 *   Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 *   This app will store every burger in a database, whether devoured or not.
 
+**Project Dependencies**
+
+- express: ^4.17.1
+- express-handlebars: ^5.2.0
+- express-session: ^1.17.1
+- mysql: ^2.18.1
+- nodemon: ^2.0.7
+- passport: ^0.4.1
+- passport-local: ^1.0.0
+- watch: ^1.0.2
+
 [Link to Deployed App](https://warm-sea-12669.herokuapp.com/)
 
 ## Table of Contents
