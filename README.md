@@ -51,9 +51,9 @@ Please contact me at the email address listed below with any questions about thi
 
 [jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
 
-[Repository Owner GitHub Profile](https://github.com/jdavidrice)
+[GitHub Profile](https://github.com/jdavidrice)
 
-[Repository Owner Portfolio](https://jdavidrice.github.io/Responsive_Portfolio/index.html)
+[Portfolio](https://jeremyrice.gatsbyjs.io/)
 
 *   [Return to Top](#Eat-Da-Burger)
 
